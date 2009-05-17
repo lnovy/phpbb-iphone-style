@@ -1,0 +1,26 @@
+
+<ul>
+
+<!-- IF S_HAS_SUBFORUM -->
+	<li class="group">Sub forums</li>
+	<!-- INCLUDE forum_list.html -->
+<!-- ENDIF -->
+
+
+<li class="group">Topics</li>
+<!-- BEGIN topicrow -->
+	<!-- IF not topicrow.S_POST_ANNOUNCE and not topicrow.S_POST_STICKY -->
+		<li>
+			<a href="{topicrow.U_VIEW_TOPIC}">
+				{topicrow.TOPIC_TITLE}
+			</a>
+		</li>
+	<!-- ENDIF -->
+
+<!-- BEGINELSE -->
+	<!-- IF S_IS_POSTABLE -->
+
+	<!-- ENDIF -->
+<!-- END topicrow -->
+</ul>
+
