@@ -1,0 +1,43 @@
+Browser redirection code
+(Based on http://startrekguide.com/community/viewtopic.php?p=103728#p103728,the original source of the code doesn't seem to exist anymore)
+
+1. Open up includes/session.php
+
+2. Around line 1468 find the following code:
+
+	/**
+	* Setup basic user-specific items (style, language, ...)
+	*/
+	function setup($lang_set = false, $style = false)
+	{
+		global $db, $template, $config, $auth, $phpEx, $phpbb_root_path, $cache;
+		
+3. After this code, add the following code:
+
+
+		//-----Begin phone detection & redirection code-----
+		
+		//id of the iphone/mobile theme
+		$mobilestyleid = 3;
+		
+		
+		//Fetch the users browser
+		$user_browser = strtolower($this->browser);
+		
+		//List of mobile user-agent keywords
+		$browsers_array = array('240x320', '320x240','blackberry', 'iemobile', 'minimobile', 'mobile', 'opera mini', 'pda', 'phone', 'pocket', 'psp', 'symbian', 't-shark', 'wireless');
+		
+		//Check for the user-agent in the list of mobile user-agents
+		foreach ($browsers_array as $ua_match) {
+			if (strpos($user_browser, $ua_match) !== false) {  //a match
+            	$style = $mobilestyleid;
+           		$this->data['is_mobile'] = true;
+           		break;
+         	}
+      	}
+		
+		//-----End phone detection/redirection code-----
+		
+4. Alter $mobilestyleid = 3, to the id of the iphone/mobile style.
+
+5. Save
