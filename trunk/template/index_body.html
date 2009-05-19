@@ -14,7 +14,7 @@
         <!-- IF S_USER_LOGGED_IN -->
         	<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" target="_self">You are logged in</a>
         <!-- ELSE -->
-   			<a href="#loginbox">Login</a>
+   			<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" target="_self">Login</a>
 		<!-- ENDIF -->
 		</li>
     </ul>
@@ -32,9 +32,5 @@
     <ul id="about" title="About">
         <li>Coming soon!</li>
     </ul>
-    
-    <div id="loginbox" class="panel">
-    	<!-- INCLUDE login_body.html -->
-    </div>
 
 <!-- INCLUDE overall_footer.html -->
