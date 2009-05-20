@@ -1,7 +1,7 @@
 <!-- INCLUDE overall_header.html -->
 
     <div class="toolbar">
-        <h1 id="pageTitle"></h1>
+        <h1 id="pageTitle">{FORUM_NAME}</h1>
         <a id="backButton" class="button" href="#"></a>
         <a class="button" href="{U_POST_NEW_TOPIC}" target="_self">New</a>
     </div>
@@ -18,7 +18,7 @@
 <!-- BEGIN topicrow -->
 	<!-- IF not topicrow.S_POST_ANNOUNCE and not topicrow.S_POST_STICKY -->
 		<li>
-			<a href="{topicrow.U_VIEW_TOPIC}">
+			<a href="{topicrow.U_VIEW_TOPIC}" target="_self">
 				{topicrow.TOPIC_TITLE}
 			</a>
 		</li>
