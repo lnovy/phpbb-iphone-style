@@ -1,16 +1,13 @@
 <!-- INCLUDE overall_header.html -->
 
     <div class="toolbar">
-        <h1 id="pageTitle"></h1>
+        <h1 id="pageTitle">{MESSAGE_TITLE}</h1>
         <a id="backButton" class="button" href="#"></a>
     </div>
 
 <div class="panel" id="message" selected="true">
-	<div class="inner"><span class="corners-top"><span></span></span>
-	<h2>{MESSAGE_TITLE}</h2>
 	<p>{MESSAGE_TEXT}</p>
 	<!-- IF SCRIPT_NAME == "search" and not S_BOARD_DISABLED and not S_NO_SEARCH and L_RETURN_TO_SEARCH_ADV --><p><a href="{U_SEARCH}" class="{S_CONTENT_FLOW_BEGIN}">{L_RETURN_TO_SEARCH_ADV}</a></p><!-- ENDIF -->
-	<span class="corners-bottom"><span></span></span></div>
 </div>
 
 <!-- INCLUDE overall_footer.html -->
