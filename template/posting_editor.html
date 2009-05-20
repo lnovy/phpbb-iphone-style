@@ -1,0 +1,16 @@
+<fieldset>
+	<!-- IF ERROR --><p class="error">{ERROR}</p><!-- ENDIF -->
+
+		<div class="row">
+			<label for="subject">{L_SUBJECT}:</label>
+			<input type="text" name="subject" id="subject" maxlength="<!-- IF S_NEW_MESSAGE -->60<!-- ELSE -->64<!-- ENDIF -->" tabindex="2" value="{SUBJECT}{DRAFT_SUBJECT}" class="inputbox autowidth" />
+		</div>
+		
+		<div class="row">
+			<label for="message">Message:</label><br /><br />
+			<textarea name="message" id="message" rows="5" cols="42">{MESSAGE}{DRAFT_MESSAGE}{SIGNATURE}</textarea>
+		</div>
+		
+</fieldset>
+
+<input type="submit" accesskey="s" tabindex="6" name="post" value="{L_SUBMIT}" class="button1" />
