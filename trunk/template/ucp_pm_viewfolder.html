@@ -1,0 +1,20 @@
+<!-- INCLUDE overall_header.html -->
+    
+    <div class="toolbar">
+        <h1 id="pageTitle">Inbox</h1>
+        <a class="button leftButton" href="." target="_self">Index</a>
+    </div>
+	
+	<ul selected="true">
+	
+		<!-- BEGIN messagerow -->
+			<li>
+				<a href="{messagerow.U_VIEW_PM}" class="topictitle">{messagerow.SUBJECT}</a>
+			</li>
+		<!-- BEGINELSE -->
+			<li>No messages</li>
+		<!-- END messagerow -->
+	
+	</ul>
+	
+<!-- INCLUDE overall_footer.html -->
