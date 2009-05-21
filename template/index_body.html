@@ -7,7 +7,7 @@
     
     <ul id="home" title="{SITENAME}" selected="true">
         <li><a href="#forums">Forums</a></li>
-        <li><a href="#pms">Private Messages</a></li>
+        <!-- IF S_USER_LOGGED_IN --><li><a href="{U_PRIVATEMSGS}" target="_self">{PRIVATE_MESSAGE_INFO}</a></li> <!-- ENDIF -->
         <li><a href="search.php?search_id=active_topics" target="_self">Active Topics</a></li>
         <li><a href="#about">About</a></li>
         <li>
