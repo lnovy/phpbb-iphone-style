@@ -1,5 +1,15 @@
 <!-- INCLUDE overall_header.html -->
 
+	<script>
+		function toggleCheckbox(checkbox) {
+			if(checkbox.checked == false) {
+				checkbox.checked = true;
+			} else {
+				checkbox.checked = false;
+			}
+		}
+	</script>
+
     <div class="toolbar">
         <h1 id="pageTitle"></h1>
         <a id="backButton" class="button" href="#"></a>
@@ -17,15 +27,36 @@
 					<input type="password" tabindex="2" id="{PASSWORD_CREDENTIAL}" name="{PASSWORD_CREDENTIAL}" size="25" class="inputbox autowidth" /></dd>
 				</div>
 				
-				{S_HIDDEN_FIELDS}
+				<div class="row">
+					<label>Auto-login</label>
+					<div class="toggle" onclick="toggleCheckbox(autologin)" toggled="true" />
+						<span class="thumb"></span>
+						<span class="toggleOn">ON</span>
+						<span class="toggleOff">OFF</span>
+					</div>
+				</div>
 				
+				<div class="row">
+					<label>Hide me</label>
+					<div class="toggle" onclick="toggleCheckbox(viewonline)" toggled="false" />
+						<span class="thumb"></span>
+						<span class="toggleOn">ON</span>
+						<span class="toggleOff">OFF</span>
+					</div>
+				</div>
+				
+				{S_HIDDEN_FIELDS}
 				<input type="hidden" name="redirect" value="./index.php" />
-
+				
+				<!-- Hidden checkbox that holds the state of the autologin thumb slider -->
+				<div style="display: none">
+					<input type="checkbox" name="autologin" id="autologin" CHECKED/>
+					<input type="checkbox" name="viewonline" id="viewonline" />
+				</div>
 				
 
 			</fieldset>
 			
-			<!--<a class="whiteButton" name="login" type="submit" href="#" target="_self">Login</a>-->
 			<input type="submit" name="login" tabindex="6" value="{L_LOGIN}" />
 							
 		</form>
