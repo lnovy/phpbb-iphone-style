@@ -1,1 +1,10 @@
-pm
+    <div class="toolbar">
+        <h1 id="pageTitle">{L_POST_A}</h1>
+        <a id="backButton" class="button" href="#"></a>
+    </div>
+    
+    		<form id="postform" method="post" action="{S_POST_ACTION}"{S_FORM_ENCTYPE} class="panel" selected="true" target="_self">
+		<!-- DEFINE $EXTRA_POSTING_OPTIONS = 1 -->
+		<!-- INCLUDE posting_editor.html -->
+		{S_FORM_TOKEN}
+		</form>
