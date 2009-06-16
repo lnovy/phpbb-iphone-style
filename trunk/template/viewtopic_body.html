@@ -8,17 +8,25 @@
 
 <div id="thread" selected="true">
 
-<!-- BEGIN postrow -->
-	<div>
-		{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> {L_POSTED_ON_DATE} {postrow.POST_DATE}
+	<!-- BEGIN postrow -->
+		<div>
+			{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> {L_POSTED_ON_DATE} {postrow.POST_DATE}
 
-		<div>{postrow.MESSAGE}</div>
+			<div>{postrow.MESSAGE}</div>
+			
+			<!-- IF postrow.S_HAS_ATTACHMENTS -->
+				<div>
+					{L_ATTACHMENTS}<br />
+					<!-- BEGIN attachment -->
+						{postrow.attachment.DISPLAY_ATTACHMENT}<br />
+					<!-- END attachment -->
+				</div>
+			<!-- ENDIF -->
+	
+		</div>
 
-
-	</div>
-
-	<hr />
-<!-- END postrow -->
+		<hr />
+	<!-- END postrow -->
 
 
 	<!-- IF PAGINATION or TOTAL_POSTS -->
