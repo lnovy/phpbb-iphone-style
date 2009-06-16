@@ -1,10 +1,24 @@
-<strong>Attachments:- </strong><br />
 <!-- BEGIN _file -->
 	<!-- IF _file.S_DENIED -->
-	<p>[{_file.DENIED_MESSAGE}]</p>
+		<p>[{_file.DENIED_MESSAGE}]</p>
 	<!-- ELSE -->
 
-			<a href="{_file.U_INLINE_LINK}" target="_new" alt="{_file.DOWNLOAD_NAME}">{_file.COMMENT}</a>
+		<!-- IF _file.S_THUMBNAIL -->
+			<!-- IF _file.COMMENT == "" -->
+				<a href="{_file.U_DOWNLOAD_LINK}" target="_new" alt="{_file.DOWNLOAD_NAME}">[No description]</a>
+			<!-- ELSE -->
+				<a href="{_file.U_DOWNLOAD_LINK}" target="_new" alt="{_file.DOWNLOAD_NAME}">{_file.COMMENT}</a>
+			<!-- ENDIF -->
+		<!-- ENDIF -->
 
+
+		<!-- IF _file.S_IMAGE -->
+			<!-- IF _file.COMMENT == "" -->
+				<a href="{_file.U_INLINE_LINK}" target="_new" alt="{_file.DOWNLOAD_NAME}">[No description]</a>
+			<!-- ELSE -->
+				<a href="{_file.U_INLINE_LINK}" target="_new" alt="{_file.DOWNLOAD_NAME}">{_file.COMMENT}</a>
+			<!-- ENDIF -->
+		<!-- ENDIF -->
+		
 	<!-- ENDIF -->
 <!-- END _file -->
