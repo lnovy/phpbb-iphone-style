@@ -5,7 +5,10 @@ blockquote {
 }
 
 .topicicon {
+	float: left;
 	border: 0px;
+	margin-right: 5px;
+	margin-top: 4px;
 }
 
 .attachmentbox {
