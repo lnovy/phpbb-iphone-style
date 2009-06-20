@@ -1,0 +1,40 @@
+<!-- INCLUDE overall_header.html -->
+
+    <div class="toolbar">
+        <h1 id="pageTitle">{PAGE_TITLE}</h1>
+        <a class="button leftButton" href="." target="_self">Index</a>
+    </div>
+    
+    <ul selected="true">
+    	
+    	<li>
+    		<label>{L_USERNAME}:</label>
+    		{USERNAME}
+    	</li>
+    	
+    	<!-- IF RANK_TITLE -->
+    		<li>
+    			<label>{L_RANK}:</label>
+    			{RANK_TITLE}
+    		</li>
+    	<!-- ENDIF -->
+    	
+    	
+    	<li class="group">{L_USER_FORUM}</li>
+    	<li>
+    		<label>{L_JOINED}:</label>
+    		{JOINED}
+    	</li>
+		<li>
+			<label>{L_VISITED}:</label>
+			{VISITED}
+		</li>
+		
+		<li>
+			<a href="{U_SEARCH_USER}">{L_TOTAL_POSTS}: {POSTS}</a>
+			
+		</li>
+    </ul>
+
+
+<!-- INCLUDE overall_footer.html -->
