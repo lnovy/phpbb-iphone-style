@@ -9,14 +9,14 @@
 <div id="thread" selected="true">
 
 	<!-- BEGIN postrow -->
-		<div>
+		<div class="post">
 			{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> {L_POSTED_ON_DATE} {postrow.POST_DATE}
 
 			<div>{postrow.MESSAGE}</div>
 			
 			<!-- IF postrow.S_HAS_ATTACHMENTS -->
-				<div>
-					{L_ATTACHMENTS}<br />
+				<div class="attachmentbox">
+					<strong>{L_ATTACHMENTS}</strong><br />
 					<!-- BEGIN attachment -->
 						{postrow.attachment.DISPLAY_ATTACHMENT}<br />
 					<!-- END attachment -->
