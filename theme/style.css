@@ -21,3 +21,8 @@ blockquote {
 .post {
 	padding: 2px;
 }
+
+.date {
+	font-size: 12px;
+	padding-right: 10px;
+}

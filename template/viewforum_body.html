@@ -19,13 +19,15 @@
 	<li>
 	<!-- IF topicrow.S_POST_ANNOUNCE -->
 			<a href="{topicrow.U_VIEW_TOPIC}" target="_self">
-				a{topicrow.TOPIC_TITLE}
+				{topicrow.TOPIC_TITLE}
+				<div class="date">{L_POST_BY_AUTHOR} {topicrow.TOPIC_AUTHOR} &raquo; {topicrow.FIRST_POST_TIME}</div>
 			</a>
 	<!-- ENDIF -->
 	
 	<!-- IF topicrow.S_POST_STICKY -->
 			<a href="{topicrow.U_VIEW_TOPIC}" target="_self">
-				b{topicrow.TOPIC_TITLE}
+				{topicrow.TOPIC_TITLE}
+				<div class="date">{L_POST_BY_AUTHOR} {topicrow.TOPIC_AUTHOR} &raquo; {topicrow.FIRST_POST_TIME}</div>
 			</a>
 	<!-- ENDIF -->
 	
@@ -33,6 +35,7 @@
 	<!-- IF not topicrow.S_POST_ANNOUNCE and not topicrow.S_POST_STICKY -->
 			<a href="{topicrow.U_VIEW_TOPIC}" target="_self">
 				{topicrow.TOPIC_TITLE}
+				<div class="date">{L_POST_BY_AUTHOR} {topicrow.TOPIC_AUTHOR} &raquo; {topicrow.FIRST_POST_TIME}</div>
 			</a>
 	<!-- ENDIF -->
 	</li>
