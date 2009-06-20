@@ -16,17 +16,31 @@
 
 <li class="group">Topics</li>
 <!-- BEGIN topicrow -->
+	<li>
+	<!-- IF topicrow.S_POST_ANNOUNCE -->
+			<a href="{topicrow.U_VIEW_TOPIC}" target="_self">
+				a{topicrow.TOPIC_TITLE}
+			</a>
+	<!-- ENDIF -->
+	
+	<!-- IF topicrow.S_POST_STICKY -->
+			<a href="{topicrow.U_VIEW_TOPIC}" target="_self">
+				b{topicrow.TOPIC_TITLE}
+			</a>
+	<!-- ENDIF -->
+	
+	
 	<!-- IF not topicrow.S_POST_ANNOUNCE and not topicrow.S_POST_STICKY -->
-		<li>
 			<a href="{topicrow.U_VIEW_TOPIC}" target="_self">
 				{topicrow.TOPIC_TITLE}
 			</a>
-		</li>
 	<!-- ENDIF -->
-
+	</li>
 <!-- BEGINELSE -->
+	
+	<li>{L_NO_TOPICS}</li>
 	<!-- IF S_IS_POSTABLE -->
-
+	
 	<!-- ENDIF -->
 <!-- END topicrow -->
 </ul>
