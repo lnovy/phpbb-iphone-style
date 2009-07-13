@@ -6,6 +6,8 @@
 This page details the roadmap for the project.
 
 
+NB. Completed tasks are scored out.
+
 = Version 1.0.0 =
 
  * ~~Login & Logout support~~
@@ -21,8 +23,9 @@ This page details the roadmap for the project.
  * PM's
   * ~~Listing~~
   * ~~Viewing~~
-  * Posting
-  * Replying
+  * ~~Posting~~
+  * ~~Replying~~
+ * Searching
 
 = Future =
  * Polls
@@ -33,3 +36,4 @@ This page details the roadmap for the project.
  * Attachments
   * Viewing of complex attachments
   * Uploading of attachments (if possible)
+ * User Control Panel
