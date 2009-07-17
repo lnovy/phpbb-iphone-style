@@ -182,7 +182,9 @@ addEventListener("click", function(event)
     {
         function unselect() { link.removeAttribute("selected"); }
         
-        if (link.href && link.hash && link.hash != "#")
+        if (link.href && !link.target) {
+        	location.href = link.href;
+        } else if (link.href && link.hash && link.hash != "#")
         {
             link.setAttribute("selected", "true");
             iui.showPage($(link.hash.substr(1)));
