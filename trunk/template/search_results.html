@@ -11,10 +11,10 @@
 			<li>
 				<span class="topicicon"><img src="{searchresults.TOPIC_FOLDER_IMG_SRC}" /></span>
 				<!-- IF searchresults.S_UNREAD_TOPIC -->
-				<a href="{searchresults.U_NEWEST_POST}" target="_self">{NEWEST_POST_IMG}</a> 
+				<a href="{searchresults.U_NEWEST_POST}" target="_self" class="topicunread">{NEWEST_POST_IMG}</a> 
 				<!-- ENDIF -->
 				
-				<a href="{searchresults.U_VIEW_TOPIC}" target="_self">
+				<a href="{searchresults.U_VIEW_TOPIC}" target="_self" class="topiclink">
 					{searchresults.TOPIC_TITLE}
 					<div class="date">{L_POST_BY_AUTHOR} {searchresults.TOPIC_AUTHOR} &raquo; {searchresults.FIRST_POST_TIME}</div>
 				</a> 
