@@ -182,7 +182,7 @@ addEventListener("click", function(event)
     {
         function unselect() { link.removeAttribute("selected"); }
         
-        if (link.href && !link.target) {
+        if (link.href && !link.target && !link.hash) {
         	location.href = link.href;
         } else if (link.href && link.hash && link.hash != "#")
         {
