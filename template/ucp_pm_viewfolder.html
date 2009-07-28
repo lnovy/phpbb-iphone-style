@@ -1,8 +1,8 @@
 <!-- INCLUDE overall_header.html -->
     
     <div class="toolbar">
-        <h1 id="pageTitle">Inbox</h1>
-        <a class="button leftButton" href="." target="_self">Index</a>
+        <h1 id="pageTitle">{L_MESSAGES}</h1>
+        <a class="button leftButton" href="." target="_self">{L_BOARD_INDEX}</a>
         <a class="button blueButton" title="{L_UCP_PM_COMPOSE}" href="{U_POST_NEW_TOPIC}" target="_self">{L_UCP_PM_COMPOSE}</a>
     </div>
 	
@@ -13,7 +13,7 @@
 				<a href="{messagerow.U_VIEW_PM}" class="topictitle" target="_self">{messagerow.SUBJECT}</a>
 			</li>
 		<!-- BEGINELSE -->
-			<li>No messages</li>
+			<li>{L_NO_MESSAGES}</li>
 		<!-- END messagerow -->
 	
 	</ul>

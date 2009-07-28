@@ -12,7 +12,7 @@
 
     <div class="toolbar">
         <h1 id="pageTitle"></h1>
-        <a id="backButton" class="button" href="#"></a>
+        <a class="button leftButton" href="." target="_self">{L_INDEX}</a>
     </div>
 
 		<form selected="true" title="Login" class="panel" method="post" action="{S_LOGIN_ACTION}" target="_self">
@@ -28,7 +28,7 @@
 				</div>
 				
 				<div class="row">
-					<label>Auto-login</label>
+					<label>{L_LOG_ME_IN}</label>
 					<div class="toggle" onclick="toggleCheckbox(autologin)" toggled="true" />
 						<span class="thumb"></span>
 						<span class="toggleOn">ON</span>
@@ -37,7 +37,7 @@
 				</div>
 				
 				<div class="row">
-					<label>Hide me</label>
+					<label>{L_HIDE_ME}</label>
 					<div class="toggle" onclick="toggleCheckbox(viewonline)" toggled="false" />
 						<span class="thumb"></span>
 						<span class="toggleOn">ON</span>

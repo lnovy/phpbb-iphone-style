@@ -6,25 +6,16 @@
     </div>
     
     <ul id="home" title="{SITENAME}" selected="true">
-        <li><a href="#forums">Forums</a></li>
+        <li><a href="#forums">{L_FORUMS}</a></li>
         <!-- IF S_USER_LOGGED_IN --><li><a href="{U_PRIVATEMSGS}" target="_self">{PRIVATE_MESSAGE_INFO}</a></li> <!-- ENDIF -->
-        <li><a href="search.php?search_id=active_topics" target="_self">Active Topics</a></li>
+        <li><a href="{U_SEARCH_ACTIVE_TOPICS}" target="_self">{L_SEARCH_ACTIVE_TOPICS}</a></li>
         <li><a href="#about">About</a></li>
         <li>
-        <!-- IF S_USER_LOGGED_IN -->
-        	<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" target="_self">You are logged in</a>
-        <!-- ELSE -->
-   			<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" target="_self">Login</a>
-		<!-- ENDIF -->
+        	<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" target="_self">{L_LOGIN_LOGOUT}</a>
 		</li>
     </ul>
     
-    
-    <ul id="pms" title="Private Messages">
-        <li>Coming soon!</li>
-    </ul>
-    
-    <ul id="forums" title="Forums">
+    <ul id="forums" title="{L_FORUMS}">
     	<!-- INCLUDE forum_list_initial.html -->
     </ul>
     
