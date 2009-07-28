@@ -12,7 +12,10 @@
 		<div class="post">
 			{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> {L_POSTED_ON_DATE} {postrow.POST_DATE}
 
-			<div>{postrow.MESSAGE}</div>
+			<a href="{postrow.U_QUOTE}" title="{L_QUOTE}" target="_self" class="postbuttons"><span>{L_QUOTE}</span></a>
+			<!-- IF postrow.U_EDIT --><a href="{postrow.U_EDIT}" title="{L_EDIT_POST}" target="_self" class="postbuttons"><span>{L_EDIT_POST}</span></a><!-- ENDIF -->
+			
+			<div class="postbody">{postrow.MESSAGE}</div>
 			
 			<!-- IF postrow.S_HAS_ATTACHMENTS -->
 				<div class="attachmentbox">
@@ -22,7 +25,6 @@
 					<!-- END attachment -->
 				</div>
 			<!-- ENDIF -->
-	
 		</div>
 
 		<hr />

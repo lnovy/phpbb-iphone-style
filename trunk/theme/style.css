@@ -1,7 +1,7 @@
 blockquote {
 	border: 1px solid #DBDBCE;
 	background: #EBEBEB;
-	padding: 2px;
+	padding: 4px;
 }
 
 .topicicon {
@@ -25,6 +25,10 @@ blockquote {
 	padding: 2px;
 }
 
+.postbody {
+	clear: both;
+}
+
 .date {
 	font-size: 12px;
 	padding-right: 10px;
@@ -39,4 +43,26 @@ blockquote {
 	padding: 8px 5px 2px 10px;
 	background: transparent none repeat scroll 0 0;
 	
+}
+
+.postbuttons {
+	float: right;
+	padding: 2px;
+	display: block;
+	border: 1px solid #666;
+	color: #333;
+	text-decoration: none;
+	margin-bottom: 2px;
+	margin-right: 4px;
+}
+
+cite {
+	display: block;
+}
+
+#pagination a {
+	padding: 2px;
+	border: 1px solid #666;	
+	color: #333;
+	text-decoration: none;
 }
