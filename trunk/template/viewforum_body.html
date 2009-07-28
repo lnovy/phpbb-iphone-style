@@ -2,19 +2,19 @@
 
     <div class="toolbar">
         <h1 id="pageTitle">{FORUM_NAME}</h1>
-        <a class="button leftButton" href="." target="_self">Index</a>
-        <a class="button blueButton" href="{U_POST_NEW_TOPIC}" target="_self">New</a>
+        <a class="button leftButton" href="." target="_self">{L_INDEX}</a>
+        <a class="button blueButton" href="{U_POST_NEW_TOPIC}" target="_self">{L_NEW_POST}</a>
     </div>
     
 <ul selected="true">
 
 <!-- IF S_HAS_SUBFORUM -->
-	<li class="group">Sub forums</li>
+	<li class="group">{L_SUBFORUMS}</li>
 	<!-- INCLUDE forum_list.html -->
 <!-- ENDIF -->
 
 
-<li class="group">Topics</li>
+<li class="group">{L_TOPICS}</li>
 <!-- BEGIN topicrow -->
 	<li>
 	<span class="topicicon"><img src="{topicrow.TOPIC_FOLDER_IMG_SRC}" /></span>
