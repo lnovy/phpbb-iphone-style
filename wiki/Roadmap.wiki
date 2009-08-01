@@ -15,10 +15,10 @@ NB. Completed tasks are scored out.
   * ~~Basic viewing~~
  * Threads
   * ~~Basic viewing~~
-   * pagination
+   * ~~pagination~~
   * ~~New Posts~~
   * ~~Posting/Replying~~
- * Active Topics
+ * ~~Active Topics~~
  * ~~Auto browser detection~~
  * PM's
   * ~~Listing~~
