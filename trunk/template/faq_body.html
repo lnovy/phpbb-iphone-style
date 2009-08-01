@@ -1,0 +1,28 @@
+<!-- INCLUDE overall_header.html -->
+
+    <div class="toolbar">
+        <h1 id="pageTitle">{L_FAQ_TITLE}</h1>
+        <a class="button leftButton" href="." target="_self">{L_INDEX}</a>
+    </div>
+    
+    <ul id="results" selected="true">
+
+		<!-- BEGIN faq_block -->
+				<li class="group">{faq_block.BLOCK_TITLE}</li>
+				<!-- BEGIN faq_row -->
+					<li><a href="#f{faq_block.S_ROW_COUNT}r{faq_block.faq_row.S_ROW_COUNT}" target="_self">{faq_block.faq_row.FAQ_QUESTION}</a></li>
+				<!-- END faq_row -->
+		<!-- END faq_block -->
+
+	</ul>
+
+		<!-- BEGIN faq_block -->
+		<!-- BEGIN faq_row -->
+		<ul id="f{faq_block.S_ROW_COUNT}r{faq_block.faq_row.S_ROW_COUNT}">
+				<li>{faq_block.faq_row.FAQ_ANSWER}</li>
+		</ul>
+		<!-- END faq_row -->
+		<!-- END faq_block -->
+
+
+<!-- INCLUDE overall_footer.html -->
