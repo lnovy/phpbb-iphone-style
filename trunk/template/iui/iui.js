@@ -217,7 +217,7 @@ addEventListener("click", function(event)
     }
 }, true);
 
-/*addEventListener("click", function(event)
+addEventListener("click", function(event)
 {
     var div = findParent(event.target, "div");
     if (div && hasClass(div, "toggle"))
@@ -225,7 +225,7 @@ addEventListener("click", function(event)
         div.setAttribute("toggled", div.getAttribute("toggled") != "true");
         event.preventDefault();        
     }
-}, true);*/
+}, true);
 
 function orientChangeHandler()
 {
