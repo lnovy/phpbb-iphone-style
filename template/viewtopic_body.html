@@ -8,6 +8,20 @@
 
 <div id="thread" selected="true">
 
+	<!-- IF PAGINATION or TOTAL_POSTS -->
+		<div id="pagination">
+			{TOTAL_POSTS}
+			<!-- IF PAGE_NUMBER -->
+				<!-- IF PAGINATION --> &bull; <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}">{PAGE_NUMBER}</a> &bull; <span>{PAGINATION}</span>
+				<!-- ELSE -->
+				&bull; {PAGE_NUMBER}
+				<!-- ENDIF -->
+			<!-- ENDIF -->
+		</div>
+	<!-- ENDIF -->
+	
+	<hr />
+	
 	<!-- BEGIN postrow -->
 		<div class="post">
 			{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> {L_POSTED_ON_DATE} {postrow.POST_DATE}
