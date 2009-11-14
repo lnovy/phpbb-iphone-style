@@ -2,6 +2,18 @@
 	<p class="error">{ERROR}</p>
 <!-- ENDIF -->
 
+<script>
+function sz(t) {
+a = t.value.split('\n');
+b=1;
+for (x=0;x < a.length; x++) {
+ if (a[x].length >= t.cols) b+= Math.floor(a[x].length/t.cols);
+ }
+b+= a.length;
+if (b > t.rows) t.rows = b;
+}
+</script>
+
 <fieldset>
 	
 
@@ -48,7 +60,7 @@
 		</div>
 
 		<div class="row" id="message-box">
-			<textarea <!-- IF S_UCP_ACTION and not S_PRIVMSGS and not S_EDIT_DRAFT -->name="signature" id="signature" style="height: 9em;"<!-- ELSE -->name="message" id="message"<!-- ENDIF --> rows="6" cols="42" tabindex="3" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" class="inputbox">{MESSAGE}{DRAFT_MESSAGE}{SIGNATURE}</textarea>
+			<textarea <!-- IF S_UCP_ACTION and not S_PRIVMSGS and not S_EDIT_DRAFT -->name="signature" id="signature" style="height: 9em;"<!-- ELSE -->name="message" id="message"<!-- ENDIF --> rows="4" class="inputbox" onkeyup="sz(this);" {MESSAGE}{DRAFT_MESSAGE}{SIGNATURE}</textarea>
 		</div>
 
 		<!-- IF $EXTRA_POSTING_OPTIONS eq 1 -->
