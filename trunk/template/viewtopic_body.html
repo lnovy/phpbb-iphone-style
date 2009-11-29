@@ -25,11 +25,13 @@
 	<!-- BEGIN postrow -->
 		<div class="post">
 			{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> {L_POSTED_ON_DATE} {postrow.POST_DATE}
+			
+			<div class="postbody">{postrow.MESSAGE}</div>
 
 			<a href="{postrow.U_QUOTE}" title="{L_QUOTE}" target="_self" class="postbuttons"><span>{L_QUOTE}</span></a>
 			<!-- IF postrow.U_EDIT --><a href="{postrow.U_EDIT}" title="{L_EDIT_POST}" target="_self" class="postbuttons"><span>{L_EDIT_POST}</span></a><!-- ENDIF -->
-			
-			<div class="postbody">{postrow.MESSAGE}</div>
+			<!-- IF postrow.U_DELETE --><a href="{postrow.U_DELETE}" title="{L_DELETE_POST}" 
+class="postbuttons"><span>{L_DELETE_POST}</span></a><!-- ENDIF -->
 			
 			<!-- IF postrow.S_HAS_ATTACHMENTS -->
 				<div class="attachmentbox">

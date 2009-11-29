@@ -27,6 +27,7 @@ blockquote {
 
 .postbody {
 	clear: both;
+	margin-bottom: 6px;
 }
 
 .date {
@@ -46,9 +47,7 @@ blockquote {
 }
 
 .postbuttons {
-	float: right;
 	padding: 2px;
-	display: block;
 	border: 1px solid #666;
 	color: #333;
 	text-decoration: none;
