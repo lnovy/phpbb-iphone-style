@@ -23,8 +23,9 @@
 	<hr />
 	
 	<!-- BEGIN postrow -->
-		<div class="post">
-			{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> {L_POSTED_ON_DATE} {postrow.POST_DATE}
+		<!-- IF postrow.S_FIRST_UNREAD --><a id="unread"></a><!-- ENDIF -->
+		<div class="post <!-- IF postrow.S_UNREAD_POST --> unreadpost<!-- ENDIF -->">
+			<a href="{postrow.U_MINI_POST}">{postrow.MINI_POST_IMG}</a> {L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> {L_POSTED_ON_DATE} {postrow.POST_DATE}
 			
 			<div class="postbody">{postrow.MESSAGE}</div>
 
