@@ -46,6 +46,11 @@ blockquote {
 	
 }
 
+.icon {
+    padding-left: 44px;
+    background-position: 8px center;
+}
+
 .postbuttons {
 	padding: 2px;
 	border: 1px solid #666;
