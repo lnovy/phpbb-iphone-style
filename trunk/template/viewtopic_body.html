@@ -29,10 +29,21 @@
 			
 			<div class="postbody">{postrow.MESSAGE}</div>
 
-			<a href="{postrow.U_QUOTE}" title="{L_QUOTE}" target="_self" class="postbuttons"><span>{L_QUOTE}</span></a>
-			<!-- IF postrow.U_EDIT --><a href="{postrow.U_EDIT}" title="{L_EDIT_POST}" target="_self" class="postbuttons"><span>{L_EDIT_POST}</span></a><!-- ENDIF -->
-			<!-- IF postrow.U_DELETE --><a href="{postrow.U_DELETE}" title="{L_DELETE_POST}" 
-class="postbuttons"><span>{L_DELETE_POST}</span></a><!-- ENDIF -->
+			<ul class="post-icons">
+			<!-- IF postrow.U_EDIT -->
+				<li class="edit-icon"><a href="{postrow.U_EDIT}" title="{L_EDIT_POST}"></a></li>
+			<!-- ENDIF -->
+			
+			<!-- IF postrow.U_DELETE -->
+				<li class="delete-icon"><a href="{postrow.U_DELETE}" title="{L_DELETE_POST}"></a></li>
+			<!-- ENDIF -->
+			
+			<!-- IF postrow.U_QUOTE -->
+				<li class="quote-icon"><a href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}"></a></li>
+			<!-- ENDIF -->
+			</ul><br />
+
+		
 			
 			<!-- IF postrow.S_HAS_ATTACHMENTS -->
 				<div class="attachmentbox">
