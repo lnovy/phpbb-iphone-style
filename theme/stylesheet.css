@@ -76,3 +76,16 @@ textarea {
 	margin-right: 6px;
 	width: 90%;
 }
+
+
+ul.post-icons { clear: both; padding: 0px; }
+ul.post-icons li { list-style: none; float: left; }
+ul.post-icons li a { display: block; }
+
+
+li.quote-icon, li.quote-icon a	{ width: {IMG_ICON_POST_QUOTE_WIDTH}px; height: {IMG_ICON_POST_QUOTE_HEIGHT}px; }
+li.edit-icon, li.edit-icon a	{ width: {IMG_ICON_POST_EDIT_WIDTH}px; height: {IMG_ICON_POST_EDIT_HEIGHT}px; }
+li.delete-icon, li.delete-icon a	{ width: {IMG_ICON_POST_DELETE_WIDTH}px; height: {IMG_ICON_POST_DELETE_HEIGHT}px; }
+li.quote-icon	{ background: url("{IMG_ICON_POST_QUOTE_SRC}"); }
+li.edit-icon	{ background: url("{IMG_ICON_POST_EDIT_SRC}"); }
+li.delete-icon	{ background: url("{IMG_ICON_POST_DELETE_SRC}"); }
